@@ -1,0 +1,747 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  background: #f4f6f8;
+  color: #222;
+  background-image: url("./assets/Background.jpeg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+
+
+/* =========================
+   NAVBAR
+========================= */
+
+.navbar {
+  min-height: 65px;
+  background: #1f2937;
+  color: white;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  padding: 12px 40px;
+}
+
+.navbar h2 {
+  margin: 0;
+}
+
+.nav-links {
+  display: flex;
+  gap: 25px;
+}
+
+.nav-links a {
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.nav-links a:hover {
+  text-decoration: underline;
+}
+
+
+/* =========================
+   CONTAINER
+========================= */
+
+.container {
+  width: 92%;
+  max-width: 1400px;
+  margin: 35px auto;
+}
+
+.container h1 {
+  margin-bottom: 25px;
+}
+
+
+/* =========================
+   DASHBOARD
+========================= */
+
+.dashboard-cards {
+  display: grid;
+
+  grid-template-columns:
+    repeat(auto-fit, minmax(220px, 1fr));
+
+  gap: 25px;
+}
+
+.card {
+  background: white;
+
+  padding: 25px;
+
+  border-radius: 12px;
+
+  box-shadow:
+    0 3px 10px rgba(0, 0, 0, 0.08);
+}
+
+.card h3 {
+  margin-top: 0;
+  color: #555;
+}
+
+.card p {
+  font-size: 32px;
+  font-weight: bold;
+  margin-bottom: 0;
+}
+
+
+/* =========================
+   PAGE HEADER
+========================= */
+
+.page-header {
+  display: flex;
+
+  justify-content: space-between;
+
+  align-items: center;
+
+  margin-bottom: 25px;
+}
+
+
+/* =========================
+   BUTTONS
+========================= */
+
+.btn-primary {
+  display: inline-block;
+
+  padding: 11px 18px;
+
+  background: #2563eb;
+
+  color: white;
+
+  text-decoration: none;
+
+  border: none;
+
+  border-radius: 6px;
+
+  cursor: pointer;
+
+  font-size: 14px;
+}
+
+.btn-primary:hover {
+  background: #1d4ed8;
+}
+
+
+.btn-secondary {
+  display: inline-block;
+
+  padding: 11px 18px;
+
+  background: #6b7280;
+
+  color: white;
+
+  text-decoration: none;
+
+  border: none;
+
+  border-radius: 6px;
+
+  cursor: pointer;
+}
+
+
+.btn-view {
+  display: inline-block;
+
+  padding: 7px 10px;
+
+  background: #16a34a;
+
+  color: white;
+
+  text-decoration: none;
+
+  border-radius: 4px;
+
+  margin-right: 5px;
+}
+
+
+.btn-edit {
+  display: inline-block;
+
+  padding: 7px 10px;
+
+  background: #f59e0b;
+
+  color: white;
+
+  text-decoration: none;
+
+  border-radius: 4px;
+
+  margin-right: 5px;
+}
+
+
+.btn-delete {
+  padding: 7px 10px;
+
+  background: #dc2626;
+
+  color: white;
+
+  border: none;
+
+  border-radius: 4px;
+
+  cursor: pointer;
+}
+
+
+/* =========================
+   FORM
+========================= */
+
+.student-form {
+  background: white;
+  
+  padding: 30px;
+
+  max-width: 700px;
+  
+  margin: 50px auto;
+  border-radius: 12px;
+
+  box-shadow:
+    0 3px 10px rgba(0, 0, 0, 0.08);
+}
+
+
+.large-form {
+  max-width: 900px;
+}
+
+
+.student-form h2 {
+  margin-top: 30px;
+
+  margin-bottom: 20px;
+
+  padding-bottom: 10px;
+
+  border-bottom: 2px solid #eee;
+
+  color: #1f2937;
+}
+
+
+.student-form label {
+  display: block;
+
+  margin-top: 15px;
+
+  margin-bottom: 7px;
+
+  font-weight: bold;
+}
+
+
+.student-form input,
+.student-form select,
+.student-form textarea {
+  width: 100%;
+
+  padding: 12px;
+
+  border: 1px solid #ccc;
+
+  border-radius: 6px;
+
+  font-size: 14px;
+
+  outline: none;
+}
+
+
+.student-form input:focus,
+.student-form select:focus,
+.student-form textarea:focus {
+  border-color: #2563eb;
+}
+
+
+.student-form textarea {
+  resize: vertical;
+}
+
+
+/* =========================
+   PHOTO
+========================= */
+
+.student-photo {
+  width: 55px;
+
+  height: 55px;
+
+  object-fit: cover;
+
+  border-radius: 50%;
+
+  border: 2px solid #ddd;
+}
+
+
+.no-photo {
+  width: 55px;
+
+  height: 55px;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  border-radius: 50%;
+
+  background: #e5e7eb;
+
+  font-size: 24px;
+}
+
+
+.photo-preview {
+  margin: 15px 0;
+}
+
+
+.student-photo-large {
+  width: 130px;
+
+  height: 130px;
+
+  object-fit: cover;
+
+  border-radius: 50%;
+
+  border: 3px solid #ddd;
+
+  display: block;
+
+  margin-top: 15px;
+}
+
+
+.edit-photo {
+  width: 150px;
+
+  height: 150px;
+
+  object-fit: cover;
+
+  border-radius: 50%;
+
+  border: 3px solid #ddd;
+}
+
+
+.no-photo-large {
+  width: 150px;
+
+  height: 150px;
+
+  border-radius: 50%;
+
+  background: #e5e7eb;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  margin: 15px 0;
+
+  color: #666;
+}
+
+
+/* =========================
+   TABLE
+========================= */
+
+.table-container {
+  width: 100%;
+
+  overflow-x: auto;
+
+  background: white;
+
+  border-radius: 10px;
+
+  box-shadow:
+    0 3px 10px rgba(0, 0, 0, 0.08);
+}
+
+
+.student-table {
+  width: 100%;
+
+  border-collapse: collapse;
+
+  min-width: 1100px;
+}
+
+
+.student-table th,
+.student-table td {
+  padding: 13px;
+
+  border-bottom: 1px solid #eee;
+
+  text-align: left;
+
+  white-space: nowrap;
+}
+
+
+.student-table th {
+  background: #e5e7eb;
+
+  font-weight: bold;
+}
+
+
+.student-table tbody tr:hover {
+  background: #f9fafb;
+}
+
+
+.actions {
+  white-space: nowrap;
+}
+
+
+/* =========================
+   SEARCH / FILTER
+========================= */
+
+.filters {
+  display: flex;
+
+  gap: 15px;
+
+  margin-bottom: 25px;
+
+  flex-wrap: wrap;
+}
+
+
+.search-box {
+  width: 350px;
+
+  padding: 12px;
+
+  border: 1px solid #ccc;
+
+  border-radius: 6px;
+}
+
+
+.filters select {
+  padding: 12px;
+
+  border: 1px solid #ccc;
+
+  border-radius: 6px;
+
+  background: white;
+}
+
+
+/* =========================
+   STATUS
+========================= */
+
+.status-active {
+  display: inline-block;
+
+  padding: 5px 10px;
+
+  background: #dcfce7;
+
+  color: #166534;
+
+  border-radius: 20px;
+
+  font-size: 12px;
+
+  font-weight: bold;
+}
+
+
+.status-inactive {
+  display: inline-block;
+
+  padding: 5px 10px;
+
+  background: #fee2e2;
+
+  color: #991b1b;
+
+  border-radius: 20px;
+
+  font-size: 12px;
+
+  font-weight: bold;
+}
+
+
+/* =========================
+   VIEW PROFILE
+========================= */
+
+.profile-card {
+  background: white;
+
+  border-radius: 12px;
+
+  padding: 35px;
+
+  box-shadow:
+    0 3px 12px rgba(0, 0, 0, 0.08);
+}
+
+
+.profile-header {
+  display: flex;
+
+  align-items: center;
+
+  gap: 30px;
+
+  padding-bottom: 30px;
+
+  border-bottom: 1px solid #eee;
+}
+
+
+.profile-header h1 {
+  margin: 0 0 10px;
+}
+
+
+.profile-header p {
+  color: #666;
+}
+
+
+.profile-photo {
+  width: 150px;
+
+  height: 150px;
+
+  object-fit: cover;
+
+  border-radius: 50%;
+
+  border: 4px solid #ddd;
+}
+
+
+.no-profile-photo {
+  background: #e5e7eb;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  font-size: 60px;
+}
+
+
+.profile-section {
+  margin-top: 30px;
+}
+
+
+.profile-section h2 {
+  margin-bottom: 20px;
+
+  color: #1f2937;
+
+  border-bottom: 2px solid #eee;
+
+  padding-bottom: 10px;
+}
+
+
+.details-grid {
+  display: grid;
+
+  grid-template-columns:
+    repeat(2, 1fr);
+
+  gap: 18px;
+}
+
+
+.details-grid div {
+  background: #f9fafb;
+
+  padding: 15px;
+
+  border-radius: 6px;
+}
+
+
+.details-grid strong {
+  display: block;
+
+  color: #555;
+
+  font-size: 13px;
+
+  margin-bottom: 6px;
+}
+
+
+.details-grid span {
+  font-size: 15px;
+
+  color: #222;
+}
+
+
+.profile-actions {
+  margin-top: 30px;
+
+  display: flex;
+
+  gap: 10px;
+}
+
+
+/* =========================
+   LOADING
+========================= */
+
+.loading {
+  text-align: center;
+
+  margin-top: 80px;
+
+  font-size: 20px;
+}
+
+
+/* =========================
+   NO DATA
+========================= */
+
+.no-data {
+  background: white;
+
+  padding: 40px;
+
+  text-align: center;
+
+  border-radius: 10px;
+
+  color: #666;
+}
+
+
+/* =========================
+   FORM BUTTONS
+========================= */
+
+.form-buttons {
+  display: flex;
+
+  gap: 10px;
+
+  margin-top: 30px;
+}
+
+
+/* =========================
+   RESPONSIVE
+========================= */
+
+@media (max-width: 768px) {
+
+  .navbar {
+    flex-direction: column;
+
+    gap: 15px;
+
+    padding: 15px;
+  }
+
+
+  .nav-links {
+    gap: 15px;
+
+    flex-wrap: wrap;
+
+    justify-content: center;
+  }
+
+
+  .page-header {
+    flex-direction: column;
+
+    align-items: flex-start;
+
+    gap: 15px;
+  }
+
+
+  .filters {
+    flex-direction: column;
+  }
+
+
+  .search-box {
+    width: 100%;
+  }
+
+
+  .details-grid {
+    grid-template-columns: 1fr;
+  }
+
+
+  .profile-header {
+    flex-direction: column;
+
+    text-align: center;
+  }
+
+
+  .profile-card {
+    padding: 20px;
+  }
+
+}
