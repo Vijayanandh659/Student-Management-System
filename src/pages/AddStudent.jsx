@@ -90,12 +90,16 @@ function AddStudent() {
 
   return (
 
-    <div className="container">
+    <div className="container add-student-page">
 
-      <h1>Add Student</h1>
+      <header className="form-page-heading">
+        <span className="eyebrow">STUDENT MANAGEMENT</span>
+        <h1>Add a student</h1>
+        <p>Enter student, academic, and contact information.</p>
+      </header>
 
       <form
-        className="student-form"
+        className="student-form modern-add-form"
         onSubmit={handleSubmit}
       >
 

@@ -114,18 +114,16 @@ function Students() {
 
   return (
 
-    <div className="container">
+    <div className="container students-page">
 
       {/* Header */}
 
-      <div className="page-header">
+      <div className="page-header student-page-header">
 
         <div>
           <h1>Students</h1>
 
-          <p>
-            Total Students: {students.length}
-          </p>
+          <p className="student-total"><span>{students.length}</span> total students</p>
         </div>
 
         <Link
