@@ -3,7 +3,6 @@ import react from '@vitejs/plugin-react'
 
 export default defineConfig({
   plugins: [react()],
-  base: '/student-management-system/',
-  preview: {allowedHosts: true
-  }
+  base: '/Student-Management-System/',
+ 
 })
